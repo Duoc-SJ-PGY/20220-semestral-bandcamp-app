@@ -10,7 +10,7 @@ const routes: Routes = [
     path: '',
     redirectTo: 'tablinks',
     pathMatch: 'full'
-  }
+  },
 ];
 
 @NgModule({

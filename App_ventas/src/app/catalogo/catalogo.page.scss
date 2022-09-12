@@ -1,0 +1,52 @@
+.discover {
+    margin-top: 2rem;
+    margin-left: 1rem; 
+    color: gray;
+    font-size: large;
+     margin-bottom: 1rem;
+}
+.rowMargin {
+
+     overflow: hidden;
+      height: 4rem;
+}
+.colContainer {
+    margin-top: 1.2rem;
+    margin-left:2rem;
+}
+.label { 
+    margin-left: -2rem;
+    background-color: transparent;
+    font-weight: bold;
+}
+.imgLeft {
+    height: 4rem; 
+    width: 3rem; 
+    border-radius: 50%;
+    transform: rotate(-18deg); 
+    margin-top: 1.2rem;
+    margin-left: 0.3rem;
+}
+.imgCenter {
+    height: 4rem;
+     width: 3rem;
+      border-radius: 50%;
+       margin-top: 0.8rem;
+       margin-left:-2rem;
+       transform: rotate(-3deg);
+}
+.imgRight {
+    height: 4rem;
+     width: 3rem;
+      border-radius: 50%;
+      transform: rotate(18deg);
+      margin-top: 1.2rem;
+        margin-left: 1.2rem;
+
+}
+.tabColor {
+    color: gray;
+    font-size: large;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}

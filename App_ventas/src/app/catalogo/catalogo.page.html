@@ -1,9 +1,201 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Catalogo</ion-title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <ion-toolbar color="secondary">
+    <div>
+      <ion-searchbar color="Tint" placeholder="search bandcamp"></ion-searchbar>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="discover">
+    <ion-label>
+      DISCOVER
+    </ion-label> 
+  </div>
+  <div style="height: 4rem;" class="container">
+    <div class="row rowMargin" style="background-color: #f7a664;">
+      <div class="col colContainer" [routerLink]="['/tablinks/tablinks/bestsellings']">
+          <ion-label class="label">
+            best selling 
+          </ion-label>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/bestSelling/mogwai.jpg" class="imgLeft"></ion-img>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/bestSelling/PinkFloyd.png" class="imgCenter"></ion-img>
+    </div>
+    <div class="col" style="margin-left:-5.3rem">
+      <ion-img src="assets/img/bestSelling/PeopleInPlanes.jpg" class="imgRight"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div style="height: 4rem;" class="container">
+    <div class="row rowMargin" style="background-color: #f67355;">
+      <div class="col colContainer">
+    <ion-label class="label">
+      rock
+    </ion-label>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/rock/LosLobos.jpg" class="imgLeft"></ion-img>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/rock/SugarCandy.jpg" class="imgCenter"></ion-img>
+    </div>
+    <div class="col" style="margin-left:-5.3rem">
+      <ion-img src="assets/img/rock/FrancieMoon.jpg" class="imgRight"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div style="height: 4rem;" class="container">
+    <div class="row rowMargin" style="background-color: #df2435;">
+      <div class="col colContainer">
+    <ion-label class="label">
+      hip-hop/rap
+    </ion-label>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/hiphop/Levi.jpg" class="imgLeft"></ion-img>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/hiphop/Run.jpg" class="imgCenter"></ion-img>
+    </div>
+    <div class="col" style="margin-left:-5.3rem">
+      <ion-img src="assets/img/hiphop/Stimulator.jpg" class="imgRight"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div style="height: 4rem;" class="container">
+    <div class="row rowMargin" style="background-color: #d4356d;">
+      <div class="col colContainer">
+    <ion-label class="label">
+      alternative
+    </ion-label>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/alternative/Myidea.jpg" class="imgLeft"></ion-img>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/alternative/Praises.jpg" class="imgCenter"></ion-img>
+    </div>
+    <div class="col" style="margin-left:-5.3rem">
+      <ion-img src="assets/img/alternative/Scenic.jpg" class="imgRight"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div style="height: 4rem;" class="container">
+    <div class="row rowMargin" style="background-color: #c13fa3;">
+      <div class="col colContainer">
+    <ion-label class="label">
+      electronic
+    </ion-label>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/electronic/GhettoHero.jpg" class="imgLeft"></ion-img>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/electronic/LevelUp.jpg" class="imgCenter"></ion-img>
+    </div>
+    <div class="col" style="margin-left:-5.3rem">
+      <ion-img src="assets/img/electronic/Messier98.jpg" class="imgRight"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div style="height: 4rem;" class="container">
+    <div class="row rowMargin" style="background-color: #985cbe;">
+      <div class="col colContainer">
+    <ion-label class="label">
+      metal
+    </ion-label>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/metal/Blackbraid.jpg" class="imgLeft"></ion-img>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/metal/Gnosis.jpg" class="imgCenter"></ion-img>
+    </div>
+    <div class="col" style="margin-left:-5.3rem">
+      <ion-img src="assets/img/metal/Shiki.jpg" class="imgRight"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div style="height: 4rem;" class="container">
+    <div class="row rowMargin" style="background-color: #8171b0;">
+      <div class="col colContainer">
+    <ion-label class="label">
+      experimental
+    </ion-label>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/experimental/Eliwinter.jpg" class="imgLeft"></ion-img>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/experimental/JonColin.jpg" class="imgCenter"></ion-img>
+    </div>
+    <div class="col" style="margin-left:-5.3rem">
+      <ion-img src="assets/img/experimental/RRRBand.jpg" class="imgRight"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div style="height: 4rem;" class="container">
+    <div class="row rowMargin" style="background-color: #8690cb;">
+      <div class="col colContainer">
+    <ion-label class="label">
+      pop
+    </ion-label>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/pop/Destiny.jpg" class="imgLeft"></ion-img>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/pop/Inthefade.jpg" class="imgCenter"></ion-img>
+    </div>
+    <div class="col" style="margin-left:-5.3rem">
+      <ion-img src="assets/img/pop/Unchained.jpg" class="imgRight"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div style="height: 4rem;" class="container">
+    <div class="row rowMargin" style="background-color: #86a8c4;">
+      <div class="col colContainer">
+    <ion-label class="label">
+      jazz
+    </ion-label>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/jazz/BlueLotus.jpg" class="imgLeft"></ion-img>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/jazz/InsaneIntherain.jpg" class="imgCenter"></ion-img>
+    </div>
+    <div class="col" style="margin-left:-5.3rem">
+      <ion-img src="assets/img/jazz/Quartet.jpg" class="imgRight"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div style="height: 4rem;" class="container">
+    <div class="row rowMargin" style="background-color: #88bfbc;">
+      <div class="col colContainer">
+    <ion-label class="label">
+      blues
+    </ion-label>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/blues/BlackSlag.jpg" class="imgLeft"></ion-img>
+    </div>
+    <div class="col">
+    <ion-img src="assets/img/blues/OldOne.jpg" class="imgCenter"></ion-img>
+    </div>
+    <div class="col" style="margin-left:-5.3rem">
+      <ion-img src="assets/img/blues/TheJourney.jpg" class="imgRight"></ion-img>
+      </div>
+    </div>
+  </div>
 
+    
 </ion-content>

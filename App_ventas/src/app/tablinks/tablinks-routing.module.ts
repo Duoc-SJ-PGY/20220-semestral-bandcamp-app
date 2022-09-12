@@ -10,59 +10,62 @@ import { TablinksPage } from './tablinks.page';
 
 const routes: Routes = [{
 
- path: 'tablinks', 
+    path: 'tablinks',
 
- component: TablinksPage,
+    component: TablinksPage,
 
- children: [ 
+    children: [
 
- {
+        {
 
- path:'catalogo',
+            path: 'catalogo',
 
- loadChildren: () => import('../catalogo/catalogo.module').then( m => m.CatalogoPageModule)
+            loadChildren: () => import('../catalogo/catalogo.module').then(m => m.CatalogoPageModule)
 
- },
+        },
 
- {
+        {
 
- path:'inicio',
+            path: 'inicio',
 
- loadChildren: () => import('../inicio/inicio.module').then( m => m.InicioPageModule)
+            loadChildren: () => import('../inicio/inicio.module').then(m => m.InicioPageModule)
 
- },
+        },
 
- {
+        {
 
- path:'perfil',
+            path: 'perfil',
 
- loadChildren: () => import('../perfil/perfil.module').then( m => m.PerfilPageModule)
+            loadChildren: () => import('../perfil/perfil.module').then(m => m.PerfilPageModule)
 
- },
+        },
+        {
+            path: 'bestsellings',
+            loadChildren: () => import('../catalogo/pages/bestsellings/bestsellings.module').then( m => m.BestsellingsPageModule)
+        },
+        {
 
- {
+            path: '',
 
- path: '',
+            redirectTo: 'tablinks/inicio',
 
- redirectTo: 'tablinks/inicio',
+            pathMatch: 'full'
 
- pathMatch: 'full'
+        },
 
- },
+    ]
 
- ]
+},
 
- },
+{
 
- {
+    path: '',
 
- path: '',
+    redirectTo: 'tablinks/inicio',
 
- redirectTo: 'tablinks/inicio',
+    pathMatch: 'full'
 
- pathMatch: 'full'
-
- },
+},
 
 ];
 
@@ -70,11 +73,11 @@ const routes: Routes = [{
 
 @NgModule({
 
- imports: [RouterModule.forChild(routes)],
+    imports: [RouterModule.forChild(routes)],
 
- exports: [RouterModule],
+    exports: [RouterModule],
 
 })
 
-export class TablinksPageRoutingModule {}
+export class TablinksPageRoutingModule { }
 

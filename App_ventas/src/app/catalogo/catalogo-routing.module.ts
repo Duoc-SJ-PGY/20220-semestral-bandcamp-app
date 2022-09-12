@@ -6,8 +6,20 @@ import { CatalogoPage } from './catalogo.page';
 const routes: Routes = [
   {
     path: '',
-    component: CatalogoPage
+    component: CatalogoPage,
+    children: [
+        {
+            path: 'bestsellings',
+            loadChildren: () => import('./pages/bestsellings/bestsellings.module').then( m => m.BestsellingsPageModule)
+        },
+      ]
+        
+  },
+  {
+    path: 'bestsellings',
+    loadChildren: () => import('./pages/bestsellings/bestsellings.module').then( m => m.BestsellingsPageModule)
   }
+
 ];
 
 @NgModule({
