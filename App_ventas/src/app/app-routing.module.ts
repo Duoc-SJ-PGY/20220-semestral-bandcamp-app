@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'tablinks',
     pathMatch: 'full'
+  },  {
+    path: 'info-tarjeta',
+    loadChildren: () => import('./info-tarjeta/info-tarjeta.module').then( m => m.InfoTarjetaPageModule)
   },
+
 ];
 
 @NgModule({
