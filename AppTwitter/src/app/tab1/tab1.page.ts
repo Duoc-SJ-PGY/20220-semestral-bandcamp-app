@@ -8,10 +8,10 @@ import { MiapiService } from '../api/miapi.service';
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page implements OnInit {
-  tweets: any[];
+  public tweets: [];
 
   constructor(private api: MiapiService) {}
   ngOnInit() {
-    this.api.GetTweets().subscribe((data) => (this.tweets = data));
+    this.api.GetTweets().subscribe((data) => (this.tweets = data.tweets));
   }
 }
