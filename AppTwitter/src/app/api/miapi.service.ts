@@ -19,6 +19,6 @@ export class MiapiService {
       .get(
         'https://devdactic.fra1.digitaloceanspaces.com/twitter-ui/tweets.json'
       )
-      .pipe(tap((_) => console.log('AWAWAW')));
+      .pipe(tap((_) => console.log(_.tweets)));
   }
 }
