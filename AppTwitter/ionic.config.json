@@ -1,0 +1,7 @@
+{
+  "name": "AppTwitter",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
