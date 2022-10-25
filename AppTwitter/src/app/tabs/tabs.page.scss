@@ -10,3 +10,12 @@ ion-badge {
     min-height: 18px;
     line-height: 14px;
 }
+ion-menu::part(backdrop) {
+    background-color: black;
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px black;
+  }

@@ -1,15 +1,100 @@
-<ion-header #header>
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button>
+      <ion-menu-button>
         <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title style="margin-left:3rem">
+      <ion-icon name="logo-twitter" color="primary" size="large"></ion-icon>
+    </ion-title> 
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="sparkles-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title slot="end">
-      <ion-icon name="logo-twitter" color="primary" size="large"></ion-icon>
-    </ion-title>
   </ion-toolbar>
 </ion-header>
+
+<!-- Menu de ionic -->
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-row>
+      <ion-col size="12" style="margin-left: 1.5rem;margin-top: 1rem;">
+      <ion-avatar>
+        <ion-img src="https://as1.ftcdn.net/v2/jpg/03/53/11/00/1000_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" style="height:60%;width:60%;"></ion-img>
+      </ion-avatar>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" style="margin-left: 2rem; margin-top: -2rem;">
+        <ion-label style="font-weight: bold;">Nickname</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" style="margin-left: 2rem; margin-top: -0.8rem;">
+        <ion-note>@Username</ion-note>
+      </ion-col>
+    </ion-row>
+    <ion-grid>
+    <ion-row size="12">
+      <ion-col size="6">
+        <div style="margin-left:1rem;">
+        <ion-label style="font-size: small;font-weight: bold;">1,480 </ion-label>
+        <ion-label style="font-size: small;">Siguiendo</ion-label>
+      </div>
+      </ion-col>
+      <ion-col size="6">
+        <div style="margin-right: 1rem;">
+          <ion-label style="font-size: small;font-weight: bold;">148 </ion-label>
+          <ion-label style="font-size: small;">Seguidos</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-toolbar>
+      <ion-list lines="none">
+      <ion-item>
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label style="font-weight: bolder;margin-left: 1rem;">
+          Perfil
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+        <ion-label style="font-weight: bolder;margin-left: 1rem;">
+          Temas
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="bookmark-outline"></ion-icon>
+        <ion-label style="font-weight: bolder;margin-left: 1rem;">
+          Elementos Guardados
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="document-text-outline"></ion-icon>
+        <ion-label style="font-weight: bolder;margin-left: 1rem;">
+          Listas
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="heart-circle-outline"></ion-icon>
+        <ion-label style="font-weight: bolder;margin-left: 1rem;">
+          Circulo de Twitter
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    </ion-toolbar>
+  </ion-content>
+</ion-menu>
+<!-- Fin menu de ionic -->
+<div class="ion-page" id="main-content">
+</div>
 <ion-tabs>
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="tab1">
@@ -25,7 +110,7 @@
       <ion-icon name="notifications-outline"></ion-icon>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab3">
+    <ion-tab-button tab="tab4">
       <ion-icon name="mail-outline"></ion-icon>
     </ion-tab-button>
   </ion-tab-bar>
