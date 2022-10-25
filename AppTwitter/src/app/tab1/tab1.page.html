@@ -1,5 +1,6 @@
 <ion-content>
-    <ion-card *ngFor="let tweet of tweets">
+  <div *ngFor="let tweet of tweets">
+    <!-- <ion-card >
       <ion-card-header>
         <ion-card-title>Card Title</ion-card-title>
         <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -7,5 +8,53 @@
       <ion-card-content>
         Here's a small text description for the card content. Nothing more, nothing less.
       </ion-card-content>
-    </ion-card>
+    </ion-card> -->
+    <ion-row class="wrapper">
+      <ion-col size="3">
+        <ion-avatar>
+          <ion-img [src]="tweet.img" style="height:80%;width:80%;"></ion-img>
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="9">
+        <ion-row class="tweet-info">
+          <ion-col size="12">
+            <span class="name">{{ tweet.username }}</span>
+            <span class="handle">@{{ tweet.handle }}</span>
+            <span class="handle">- {{ tweet.date*1000 | date: 'shortDate' }}</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <div [innerHtml]="tweet.text"></div>
+            <img class="preview-img" [src]="tweet.attachment" *ngIf="tweet.attachment">
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-start">
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon name="chatbubble-outline" slot="start"></ion-icon>
+              {{ tweet.response }}
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button (click)="tweet.retweet = !tweet.retweet" fill="clear" [color]="tweet.retweet ? 'primary' : 'medium'" size="small">
+              <ion-icon name="repeat-outline" slot="start"></ion-icon>
+              {{ tweet.retweets }}
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button (click)="tweet.liked = !tweet.liked" fill="clear" [color]="tweet.liked ? 'primary' : 'medium'" size="small">
+              <ion-icon name="heart-outline" slot="start"></ion-icon>
+              {{ tweet.like }}
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon name="share-outline" slot="start"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>
