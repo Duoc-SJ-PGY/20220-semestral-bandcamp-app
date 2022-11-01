@@ -6,8 +6,11 @@
       </ion-menu-button>
     </ion-buttons>
     <ion-title style="margin-left:3rem">
+      <ion-button [routerLink]="['/tabs/tab1']" fill="clear" size="default">
       <ion-icon name="logo-twitter" color="primary" size="large"></ion-icon>
-    </ion-title> 
+    </ion-button> 
+    </ion-title>
+  
     <ion-buttons slot="end">
       <ion-button>
         <ion-icon slot="icon-only" name="sparkles-outline"></ion-icon>
@@ -58,7 +61,7 @@
   <ion-content>
     <ion-toolbar>
       <ion-list lines="none">
-      <ion-item >
+      <ion-item>
         <ion-button [routerLink]="['/perfil']" fill="clear" size="default">
         <ion-icon name="person-outline"></ion-icon>
         <ion-label style="font-weight: bolder;margin-left: 1rem;">
