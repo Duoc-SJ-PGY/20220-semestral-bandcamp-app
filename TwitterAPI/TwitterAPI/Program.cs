@@ -6,8 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors();
 
 var app = builder.Build();
+app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -24,10 +26,16 @@ var summaries = new[]
 };
 
 List<Usuario> usuarios = new List<Usuario>();
+List<Tweet> tweets = new List<Tweet>();
 
 app.MapGet("/Usuarios", () =>
 {
     return usuarios;
+});
+
+app.MapGet("/Usuarios/{id}", (int id) =>
+{
+    return usuarios.FirstOrDefault(x => x.Id == id);
 });
 
 app.MapPost("/Usuarios", (Usuario usuario) =>
@@ -55,43 +63,32 @@ app.MapPut("/Usuario", (Usuario usuario) =>
     var user = usuarios.FirstOrDefault(x => x.Id == usuario.Id);
     if (user == null)
         return StatusCodes.Status404NotFound;
-    user = usuario;
+    user.Apellido = usuario.Apellido;
+    user.Nombre = usuario.Nombre;
+    user.Correo = usuario.Correo;
+    user.Password = usuario.Password;
+    user.Nick = usuario.Nick;
+    return StatusCodes.Status200OK;
+});
+
+app.MapGet("/Tweets", () =>
+{
+    return tweets;
+});
+
+app.MapGet("/Tweets/{id}", (int id) =>
+{
+    return tweets.FindAll(x => x.ID_Usuario == id);
+});
+app.MapPost("Tweets/", (Tweet tweet) =>
+{
+    var user = usuarios.Find(x => x.Id == tweet.ID_Usuario);
+    if (user == null)
+        return StatusCodes.Status400BadRequest;
+    tweets.Add(tweet);
     return StatusCodes.Status200OK;
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateTime.Now.AddDays(index),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
-
 app.Run();
 
-internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
