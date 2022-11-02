@@ -20,12 +20,16 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'registro',
+    redirectTo: 'inicio-app',
     pathMatch: 'full',
   },
   {
     path: 'new-tweet',
     loadChildren: () => import('./new-tweet/new-tweet.module').then( m => m.NewTweetPageModule)
+  },
+  {
+    path: 'inicio-app',
+    loadChildren: () => import('./inicio-app/inicio-app.module').then( m => m.InicioAppPageModule)
   },
 ];
 @NgModule({

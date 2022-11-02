@@ -52,3 +52,13 @@ C:/Users/Alumno/Documents/Github/20220-semestral-bandcamp-app/TwitterAPI/Twitter
 /home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/obj/Debug/net6.0/TwitterAPI.csproj.CopyComplete
 /home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/obj/Debug/net6.0/TwitterAPI.genruntimeconfig.cache
 /home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/obj/Debug/net6.0/ref/TwitterAPI.dll
+/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
+/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
+/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll

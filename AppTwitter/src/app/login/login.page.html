@@ -4,6 +4,7 @@
   </div>
   <div>
     <ion-grid>
+      <form [formGroup]="formularioLogin">
       <ion-row>
         <ion-col size="12" class="ion-text-center">
           <ion-label style="color: white; font-weight: bold">See what's happening in the world right now</ion-label>
@@ -11,22 +12,23 @@
       </ion-row>
       <ion-row>
         <ion-col size="12" class="ion-text-center" style="margin: auto">
-          <ion-input style="background-color: white; border-radius: 2rem" placeholder="Usuario o Correo" type="text">
+          <ion-input style="background-color: white; border-radius: 2rem" placeholder="Usuario o Correo" type="text" formControlName="usuario">
           </ion-input>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col size="12" class="ion-text-center" style="margin: auto">
-          <ion-input style="background-color: white; border-radius: 2rem" placeholder="Contraseña" type="password"
+          <ion-input style="background-color: white; border-radius: 2rem" placeholder="Contraseña" type="password" formControlName="password"
             ngModel></ion-input>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col size="12" class="ion-text-center" style="margin: auto">
-          <ion-button [routerLink]="['/tabs']" fill="outline" color="light">Login</ion-button>
+          <ion-button  fill="outline" color="light" (click)="login()">Login</ion-button>
+          <!-- <ion-button [routerLink]="['/tabs']" fill="outline" color="light">Login</ion-button> -->
         </ion-col>
-
       </ion-row>
+      </form>
     </ion-grid>
   </div>
 </ion-content>
