@@ -23,6 +23,10 @@ const routes: Routes = [
     redirectTo: 'registro',
     pathMatch: 'full',
   },
+  {
+    path: 'new-tweet',
+    loadChildren: () => import('./new-tweet/new-tweet.module').then( m => m.NewTweetPageModule)
+  },
 ];
 @NgModule({
   imports: [
