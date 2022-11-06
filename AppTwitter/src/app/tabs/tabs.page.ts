@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MiapiService } from '../api/miapi.service';
 
 @Component({
   selector: 'app-tabs',
@@ -6,7 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
+  public profile = [];
 
-  constructor() {}
-
+  constructor(private api: MiapiService) {}
+  ngOnInit() {
+   this.api.GetProfile().subscribe((data) => (this.profile = data));
+  }
 }

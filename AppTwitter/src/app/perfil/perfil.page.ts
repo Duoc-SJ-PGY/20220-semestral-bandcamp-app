@@ -8,11 +8,12 @@ import { MiapiService } from '../api/miapi.service';
 })
 export class PerfilPage implements OnInit {
   tweets = [];
-
+  profile = [];
   constructor(private api: MiapiService) { }
 
   ngOnInit() {
-    this.api.GetTweets().subscribe((data) => (this.tweets = data.tweets));
+    this.api.GetTweets().subscribe((data) => (this.tweets = data));
+    this.api.GetProfile().subscribe((data) => (this.profile = data));
   }
 
 }
