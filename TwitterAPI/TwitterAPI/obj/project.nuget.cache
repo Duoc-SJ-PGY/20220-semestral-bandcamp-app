@@ -1,9 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "i0RnBRLx4ejfYDquKqDZ5YTR4TltU2hFbJYVE6NDZfibcg2d6IKhvG4IKTzPzty6cgcMZLbcV9zh8xpcoQKJ8g==",
+=======
+  "dgSpecHash": "C3El5IpXEgkHzTdnIlv9W9SiatGtnec8K/UfOM9v/6ERp0ALzvEZVl1OHCGO2ZF1qer+kPthzSWsF8ifp5PNGQ==",
+>>>>>>> bf3df8d3c38c088ad220a299c639774fa6de9369
   "success": true,
-  "projectFilePath": "C:\\Users\\Alumno\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj",
+  "projectFilePath": "/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI/TwitterAPI/TwitterAPI.csproj",
   "expectedPackageFiles": [
+<<<<<<< HEAD
     "C:\\Users\\Alumno\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0-rc.2.22472.11\\microsoft.entityframeworkcore.7.0.0-rc.2.22472.11.nupkg.sha512",
     "C:\\Users\\Alumno\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0-rc.2.22472.11\\microsoft.entityframeworkcore.abstractions.7.0.0-rc.2.22472.11.nupkg.sha512",
     "C:\\Users\\Alumno\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.0-rc.2.22472.11\\microsoft.entityframeworkcore.analyzers.7.0.0-rc.2.22472.11.nupkg.sha512",
@@ -22,6 +27,26 @@
     "C:\\Users\\Alumno\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "C:\\Users\\Alumno\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Users\\Alumno\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+=======
+    "/home/anticucho/.nuget/packages/microsoft.entityframeworkcore/7.0.0-rc.2.22472.11/microsoft.entityframeworkcore.7.0.0-rc.2.22472.11.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.0-rc.2.22472.11/microsoft.entityframeworkcore.abstractions.7.0.0-rc.2.22472.11.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.0-rc.2.22472.11/microsoft.entityframeworkcore.analyzers.7.0.0-rc.2.22472.11.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0-rc.2.22472.3/microsoft.extensions.caching.abstractions.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.extensions.caching.memory/7.0.0-rc.2.22472.3/microsoft.extensions.caching.memory.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0-rc.2.22472.3/microsoft.extensions.dependencyinjection.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0-rc.2.22472.3/microsoft.extensions.dependencyinjection.abstractions.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.extensions.logging/7.0.0-rc.2.22472.3/microsoft.extensions.logging.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0-rc.2.22472.3/microsoft.extensions.logging.abstractions.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.extensions.options/7.0.0-rc.2.22472.3/microsoft.extensions.options.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.extensions.primitives/7.0.0-rc.2.22472.3/microsoft.extensions.primitives.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "/home/anticucho/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+>>>>>>> bf3df8d3c38c088ad220a299c639774fa6de9369
   ],
   "logs": []
 }
