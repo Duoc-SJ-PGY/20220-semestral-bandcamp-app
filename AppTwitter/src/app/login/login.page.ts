@@ -8,7 +8,7 @@ import { MiapiService } from '../api/miapi.service';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-
+  public profile = [];
   formularioLogin: FormGroup;
 
   constructor(private fb: FormBuilder, private api : MiapiService) { 
@@ -26,8 +26,9 @@ export class LoginPage implements OnInit {
     console.log(this.formularioLogin.value);
      this.api.Login(this.formularioLogin.value.usuario, this.formularioLogin.value.password).subscribe((data) => 
      { 
-      if(data == true) 
-     { window.location.href = '/tabs/tab1'; }
+      if(data != null)
+     { window.location.href = '/tabs/tab1';
+      this.profile = data;}
       }
     );
 

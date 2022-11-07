@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MiapiService } from '../api/miapi.service';
+import { LoginPage } from '../login/login.page';
 
 @Component({
   selector: 'app-perfil',
@@ -12,7 +13,7 @@ export class PerfilPage implements OnInit {
   constructor(private api: MiapiService) { }
 
   ngOnInit() {
-    this.api.GetTweets().subscribe((data) => (this.tweets = data));
+    this.api.GetTweets(3).subscribe((data) => (this.tweets = data));
     this.api.GetProfile().subscribe((data) => (this.profile = data));
   }
 

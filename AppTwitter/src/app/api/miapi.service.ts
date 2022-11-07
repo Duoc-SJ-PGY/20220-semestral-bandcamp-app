@@ -9,11 +9,10 @@ import { from } from 'rxjs';
 })
 export class MiapiService {
   constructor(private http: HttpClient) { }
-
-  GetTweets(): Observable<any> {
+  GetTweets(idUser): Observable<any> {
     return this.http
       .get(
-        'https://localhost:7097/Tweets/1'
+        'https://localhost:7068/api/TweetsControllers/' + idUser,
       )
       .pipe(tap((_) => console.log(_.tweets)));
   }
@@ -21,7 +20,7 @@ export class MiapiService {
   GetProfile(): Observable<any> {
     return this.http
       .get(
-        'https://localhost:7097/Usuarios/1',
+        'https://localhost:7068/api/Usuario/2',
       )
       .pipe(tap((_) => console.log(_.profile)));
   }
@@ -44,23 +43,27 @@ export class MiapiService {
   }
   Login(user, password): Observable<any> {
     return this.http
-      .post('https://localhost:7097/Login/?nick=' + user + '&pass=' + password, {})
+      .post('https://localhost:7068/api/Usuario/login?nick=' + user + '&pass=' + password, {})
   }
 
   Registro(nombre, apellido, usuario, correo, pass): Observable<any> {
+    var min = Math.ceil(1);
+    var max = Math.floor(100000);
+    var Seguidos = Math.floor(Math.random() * (max - min) + min);
+    var Seguidores = Math.floor(Math.random() * (max - min) + min);
+    console.log(Seguidos, Seguidores);
     return this.http
-      .post('https://localhost:7097/Usuarios', {
+      .post('https://localhost:7068/api/Usuario', {
 
-        "id": 20,
         "nick": usuario,
         "password": pass,
         "nombre": nombre,
         "apellido": apellido,
         "correo": correo,
         "urlImage": "string",
-        "fechaIngreso": "2022-11-02T19:48:38.054Z",
-        "cantidadSeguidos": 111,
-        "cantidadSeguidores": 1111
+        "fechaIngreso": "2021-11-02T04:56:50.760Z",
+        "cantidadSeguidos": Seguidos.toFixed(0),
+        "cantidadSeguidores": Seguidores.toFixed(0),
       })
   }
 

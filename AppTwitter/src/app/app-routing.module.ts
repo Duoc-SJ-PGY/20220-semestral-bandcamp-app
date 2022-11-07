@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'inicio-app',
+    redirectTo: 'registro',
     pathMatch: 'full',
   },
   {
