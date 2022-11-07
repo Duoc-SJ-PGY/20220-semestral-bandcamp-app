@@ -1,6 +1,35 @@
-namespace TwitterAPI.Controllers;
+using Microsoft.AspNetCore.Mvc;
+using TwitterAPI.Datos;
+using TwitterAPI.Models;
 
-public class TweetsControllers
+namespace TwitterAPI.Controllers
 {
-    
+    [Route("api/[controller]")]
+    [ApiController]
+    public class TweetsControllers : ControllerBase
+    {
+        private ApplicationDbContext _context;
+
+        public TweetsControllers(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Tweets>> Get()
+        {
+            return Ok(_context.Tweets.ToList());
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            var tweet = _context.Tweets.Where(x => x.ID_Usuario == id).ToList();
+            if (tweet == null)
+            {
+                return NotFound();
+            }
+            return Ok(tweet);
+        }
+    }
 }

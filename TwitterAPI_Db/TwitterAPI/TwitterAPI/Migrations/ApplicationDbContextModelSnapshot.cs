@@ -22,6 +22,40 @@ namespace TwitterAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("TwitterAPI.Models.Tweets", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ID_Usuario")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Likes")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Respuestas")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Retweets")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Texto")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("ID_Usuario");
+
+                    b.ToTable("Tweets");
+                });
+
             modelBuilder.Entity("TwitterAPI.Models.Usuario", b =>
                 {
                     b.Property<int>("Id")
@@ -66,6 +100,22 @@ namespace TwitterAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuario");
+                });
+
+            modelBuilder.Entity("TwitterAPI.Models.Tweets", b =>
+                {
+                    b.HasOne("TwitterAPI.Models.Usuario", "Usuario")
+                        .WithMany("Tweets")
+                        .HasForeignKey("ID_Usuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("TwitterAPI.Models.Usuario", b =>
+                {
+                    b.Navigation("Tweets");
                 });
 #pragma warning restore 612, 618
         }

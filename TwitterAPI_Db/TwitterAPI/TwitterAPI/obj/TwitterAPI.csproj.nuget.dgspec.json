@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj": {}
+    "/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI_Db/TwitterAPI/TwitterAPI/TwitterAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj": {
+    "/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI_Db/TwitterAPI/TwitterAPI/TwitterAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj",
+        "projectUniqueName": "/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI_Db/TwitterAPI/TwitterAPI/TwitterAPI.csproj",
         "projectName": "TwitterAPI",
-        "projectPath": "C:\\Users\\Alumno\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj",
-        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\obj\\",
+        "projectPath": "/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI_Db/TwitterAPI/TwitterAPI/TwitterAPI.csproj",
+        "packagesPath": "/home/anticucho/.nuget/packages/",
+        "outputPath": "/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI_Db/TwitterAPI/TwitterAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/anticucho/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,9 +46,21 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools.DotNet": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.10, )"
             },
@@ -78,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }

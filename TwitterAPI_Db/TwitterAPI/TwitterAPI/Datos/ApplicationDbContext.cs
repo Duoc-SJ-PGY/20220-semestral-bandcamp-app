@@ -11,5 +11,6 @@ namespace TwitterAPI.Datos
         }
 
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Tweets> Tweets { get; set; }
     }
 }
