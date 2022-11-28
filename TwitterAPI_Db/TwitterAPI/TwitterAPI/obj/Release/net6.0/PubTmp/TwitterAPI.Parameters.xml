@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="TwitterCloneAPI" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\jorge\.munoz\.m\.MUNIMACUL\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

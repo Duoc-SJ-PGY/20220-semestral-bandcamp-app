@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\Desktop\\app\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj": {}
+    "C:\\Users\\jorge.munoz.m.MUNIMACUL\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\Desktop\\app\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj": {
+    "C:\\Users\\jorge.munoz.m.MUNIMACUL\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\app\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj",
+        "projectUniqueName": "C:\\Users\\jorge.munoz.m.MUNIMACUL\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj",
         "projectName": "TwitterAPI",
-        "projectPath": "C:\\Users\\Alumno\\Desktop\\app\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj",
-        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\Desktop\\app\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\obj\\",
+        "projectPath": "C:\\Users\\jorge.munoz.m.MUNIMACUL\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj",
+        "packagesPath": "C:\\Users\\jorge.munoz.m.MUNIMACUL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jorge.munoz.m.MUNIMACUL\\Documents\\Github\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jorge.munoz.m.MUNIMACUL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -58,17 +64,25 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
-            "Microsoft.EntityFrameworkCore.Tools.DotNet": {
-              "target": "Package",
-              "version": "[2.0.3, )"
-            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.10, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
@@ -90,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

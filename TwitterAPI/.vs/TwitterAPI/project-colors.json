@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0f81d2bb-5143-4e71-8de6-f06170b6786d": {
+      "ProjectGuid": "0f81d2bb-5143-4e71-8de6-f06170b6786d",
+      "DisplayName": "TwitterAPI",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
