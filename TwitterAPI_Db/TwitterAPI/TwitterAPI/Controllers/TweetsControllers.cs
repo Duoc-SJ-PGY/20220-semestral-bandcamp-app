@@ -31,5 +31,16 @@ namespace TwitterAPI.Controllers
             }
             return Ok(tweet);
         }
+        [HttpPost]
+        public IActionResult Post(Tweets tweet)
+        {
+            var twit = _context.Tweets.Where(x => x.ID == tweet.ID).ToList();
+            if(twit != null)
+            {
+                return NotFound();
+            }
+            _context.Tweets.Add(tweet);
+            return Ok(tweet);
+        }
     }
 }

@@ -4,7 +4,7 @@
       <ion-back-button text="" icon="arrow-back-outline"  class="back-button"></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-back-button text="" icon="search-outline" defaultHref="" class="back-button" style="margin-right: 1rem;">
+      <ion-back-button text="" icon="search-outline" [routerLink]="['/tabs/tab2']" defaultHref="" class="back-button" style="margin-right: 1rem;">
       </ion-back-button>
       <ion-back-button text="" icon="ellipsis-vertical-outline" defaultHref="" class="back-button"></ion-back-button>
     </ion-buttons>
@@ -46,13 +46,13 @@
     <ion-row size="12">
       <ion-col size="5">
         <div style="margin-right: 1rem;">
-          <ion-label style="font-size: 0.6rem;font-weight: bold;">1,480 </ion-label>
+          <ion-label style="font-size: 0.6rem;font-weight: bold;">{{profile.cantidadSeguidores}} </ion-label>
           <ion-label style="font-size: 0.6rem;">Siguiendo</ion-label>
         </div>
       </ion-col>
       <ion-col size="7">
         <div style="margin-right: 2rem;">
-          <ion-label style="font-size: 0.6rem;font-weight: bold;">148 </ion-label>
+          <ion-label style="font-size: 0.6rem;font-weight: bold;">{{profile.cantidadSeguidos}}</ion-label>
           <ion-label style="font-size: 0.6rem;">Seguidos</ion-label>
         </div>
       </ion-col>

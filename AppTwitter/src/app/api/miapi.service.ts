@@ -20,7 +20,7 @@ export class MiapiService {
   GetProfile(): Observable<any> {
     return this.http
       .get(
-        'https://localhost:7068/api/Usuario/2',
+        'https://localhost:7068/api/Usuario/4',
       )
       .pipe(tap((_) => console.log(_.profile)));
   }
@@ -28,15 +28,15 @@ export class MiapiService {
   PostTweet(): Observable<any> {
     return this.http
       .post(
-        'https://localhost:7097/Tweets/',
+        'https://localhost:7097/api/TweetsControllers/',
         {
-          "id": 0,
-          "iD_Usuario": 1,
+          "id": 101,
+          "iD_Usuario": 4,
           "texto": "adasdasdasasdasd",
           "fecha": "2022-11-02T04:56:50.760Z",
-          "retweets": 0,
-          "likes": 0,
-          "respuestas": 0
+          "retweets": 15,
+          "likes": 10,
+          "respuestas": 111
         }
       )
       .pipe(tap((_) => console.log(_.profile)));

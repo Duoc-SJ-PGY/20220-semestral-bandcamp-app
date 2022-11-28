@@ -12,7 +12,7 @@
     </ion-title>
   
     <ion-buttons slot="end">
-      <ion-button>
+      <ion-button [routerLink]="['/tabs/tab2']">
         <ion-icon slot="icon-only" name="sparkles-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -111,9 +111,6 @@
     <ion-tab-button tab="tab3">
       <ion-badge color="primary">11</ion-badge>
       <ion-icon name="notifications-outline"></ion-icon>
-    </ion-tab-button>
-    <ion-tab-button tab="tab4">
-      <ion-icon name="mail-outline"></ion-icon>
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>

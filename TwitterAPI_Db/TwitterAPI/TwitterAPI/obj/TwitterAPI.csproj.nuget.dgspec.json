@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI_Db/TwitterAPI/TwitterAPI/TwitterAPI.csproj": {}
+    "C:\\Users\\Alumno\\Desktop\\app\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj": {}
   },
   "projects": {
-    "/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI_Db/TwitterAPI/TwitterAPI/TwitterAPI.csproj": {
+    "C:\\Users\\Alumno\\Desktop\\app\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI_Db/TwitterAPI/TwitterAPI/TwitterAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\app\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj",
         "projectName": "TwitterAPI",
-        "projectPath": "/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI_Db/TwitterAPI/TwitterAPI/TwitterAPI.csproj",
-        "packagesPath": "/home/anticucho/.nuget/packages/",
-        "outputPath": "/home/anticucho/Documentos/Github/20220-semestral-bandcamp-app/TwitterAPI_Db/TwitterAPI/TwitterAPI/obj/",
+        "projectPath": "C:\\Users\\Alumno\\Desktop\\app\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\TwitterAPI.csproj",
+        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alumno\\Desktop\\app\\20220-semestral-bandcamp-app\\TwitterAPI_Db\\TwitterAPI\\TwitterAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/anticucho/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -88,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

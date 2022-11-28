@@ -13,7 +13,7 @@ export class Tab1Page implements OnInit {
 
   constructor(private api: MiapiService) {}
   ngOnInit() {
-    this.api.GetTweets(3).subscribe((data) => (this.tweets = data));
+    this.api.GetTweets(4).subscribe((data) => (this.tweets = data));
     this.api.GetProfile().subscribe((data) => (this.profile = data));
   }
 }
